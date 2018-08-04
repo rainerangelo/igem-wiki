@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team:Calgary - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="layout.css">
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                navigation: true,
+                loopBottom: true,
+                loopTop: true,
+                responsiveWidth: 750,
+                responsiveHeight: 400,
+                afterResponsive: function (isResponsive) { }
+            });
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <a class="navbar-brand" href="#">Snip, Equip, Flip</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav navbar-center">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notebook</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Human Practices
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Judging
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mainContent" id="fullpage">
+        <!-- Description -->
+        <div class="section">
+            <h1>Title 1</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam earum officiis temporibus ipsam exercitationem
+                velit sunt provident sed quasi, molestias beatae. Obcaecati consequuntur voluptatibus minus adipisci exercitationem
+                dicta maiores?
+                <br>
+                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, minus totam et officiis quas facere
+                minima, inventore nesciunt recusandae, animi asperiores. Natus accusantium dolorem, sequi laudantium laborum
+                sint alias inventore.</p>
+        </div>
+        <!-- Demonstration -->
+        <div class="section">
+            <h1>Title 2</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam earum officiis temporibus ipsam exercitationem
+                velit sunt provident sed quasi, molestias beatae. Obcaecati consequuntur voluptatibus minus adipisci exercitationem
+                dicta maiores?
+                <br>
+                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, minus totam et officiis quas facere
+                minima, inventore nesciunt recusandae, animi asperiores. Natus accusantium dolorem, sequi laudantium laborum
+                sint alias inventore.</p>
+        </div>
+        <!-- Learn More -->
+        <div class="section">
+            <h1>Title 3</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

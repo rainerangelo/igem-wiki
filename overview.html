@@ -7,31 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="home.css">
+    <style>
+        #scienceBit {
+            margin-top: 180px;
+            margin-bottom: 180px;
+        }
+
+        .info {
+            text-align: justify;
+            padding: 30px;
+        }
+
+        hr {
+            border-color: white;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
     <!-- JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                anchors: ['problem', 'solution', 'learn'],
-                navigation: true,
-                loopBottom: true,
-                loopTop: true,
-                responsiveWidth: 750,
-                responsiveHeight: 400,
-                afterResponsive: function (isResponsive) { }
-            });
-        });
-    </script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Snip, Equip, Flip</a>
+        <a class="navbar-brand" href="#">Snip Equip Flip</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -105,50 +113,77 @@
     </nav>
 
     <!-- Content -->
-    <div class="container mainContent" id="fullpage">
-        <!-- Description -->
-        <div class="section">
-            <h1>What is Astroplastic?</h1>
-            <br>
-            <p>Governments and private enterprises alike are gearing up for travel across our Solar System. Plans to colonize
-                nearby planets are underway, with Elon Musk spearheading the initiative to put a human colony on Mars by
-                2030. In a parallel vein, NASA is planning a manned exploratory mission to Mars as early as the 2030s. Several
-                other space agencies have similar plans and timelines for their own Mars explorations. This exciting time
-                in our history nonetheless comes with the challenges of long-term space travel. Two ecological and economic
-                challenges arise: the sustainable management of waste produced on a spaceship and the high cost of shipping
-                materials to space.
-                <br>
-                <br>This year, the University of Calgary's project involves using genetically engineered E. coli to turn human
-                waste into bioplastics. We envision our project as a start-to-finish integrated system that can be used in
-                space to generate items useful to astronauts during early Mars missions. This will solve the problem of waste
-                management by upcycling solid human waste into a usable product. It will also reduce astronautical costs,
-                as expensive fuel routinely used to ship materials to space can be saved.</p>
+    <div class="container" id="scienceBit">
+        <h1>
+            How We're Moving Towards a Safer Gene Therapy
+        </h1>
+        <div class="row info">
+            While viral vectors have successfully demonstrated the potential of gene therapy, safety concerns, such as the random integration
+            of therapeutic DNA, which can lead to cancer and severe immune responses, constrain their use to severe diseases.
+            In order for gene therapies to benefit a greater number of people, for a wider range of indications, the risks
+            of viral delivery must be overcome.
         </div>
-        <!-- Demonstration -->
-        <div class="section">
-            <h1>How does it work?</h1>
-            <br>
-            <p>Poly(3-hydroxybutyrate) (PHB) is a linear polyester and is a product of bacterial fermentation of some sugars
-                or lipids (Anjum, 2016). PHB is used by bacteria (such as Ralstonia eutropha and Pseudomonas aeruginosa)
-                (Anderson, 1990) as carbon and energy storage (Tsuge, 2003). PHB is one preferred alternative to petroleum-based
-                plastics due to its biodegradability (Tsuge, 2003) and the potential for more environmentally friendly manufacturing
-                processes. Current PHB production processes are costly, which limits industrial scale use and application
-                of PHB (Anjum, 2016). We aim to eliminate the cost of using lipid or sugar feedstocks in PHB-production facilities
-                by using human solid waste as a feedstock. We have engineered recombinant Escherichia coli to utilize genes
-                from native PHB-producing bacteria. These genes code for enzymes in the glycolysis and fatty acid beta-oxidation
-                pathways (which break down sugars and lipids, respectively), and in PHB production. We thus hope to optimize
-                PHB production by improving yields and cutting costs, which would promote the use of PHB in industry. This
-                process could also improve the management of human waste by producing a value-added product.
-                <br>
-                <br>We have focused our efforts on PHB synthesis in engineered E. coli cells, PHB secretion from these cells
-                for easy harvest, the overall start-to-finish process development, and how our project will impact the future
-                of space travel through our human practices work.</p>
+        <div class="row info">
+            Targeted integration of DNA in mammalian genomes has been made simple with CRISPR/Cas9. Unfortunately, the insertion of large
+            (> 1 kb) DNA inserts has proven too inefficient for therapeutic applications, restricting the use of CRISPR-mediated
+            knock-in to relatively small inserts. In light of these constraints, the University of Calgary iGEM team has
+            designed a targeted gene integration platform to build a safer gene therapy.
         </div>
-        <!-- Learn More -->
-        <div class="section">
-            <h1>Learn more about our project by clicking on the buttons below!</h1>
+        <div class="row">
+            <div class="col-6 info">
+                There are two pillars at the core of our platform. The first consists of a two-phase integration system, based on CRISPR/Cas9
+                and Flp recombinase. By inserting small Flp recombinase target (FRT) sites using CRISPR/Cas9, Flp can be
+                used to integrate large inserts. To minimize the risk of off-target effects, we will target a "genomic safe
+                harbor" where DNA can safely be introduced.
+            </div>
+            <div class="col-6 info">
+                Furthermore, we are minimizing off-target integration by employing Cas9 nickase with an ssDNA template. This second pillar
+                leverages regulatory elements (REs) found naturally in the human genome to keep therapeutic DNA active and
+                isolated from its genomic context. In particular, we are using ubiquitously-acting chromatin-opening elements
+                (UCOEs) to maintain internal control of transgene expression, while preventing disruption of the host genome
+                with insulators.
+            </div>
+        </div>
+        <hr>
+        <br>
+        <h1>
+            How Snip, Equip, Flip Works
+        </h1>
+        <div class="row">
+            <div class="col-6 info">
+                <p>1. Snip: Paired nicks near the genomic target to initiate DNA repair.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Snip.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 info">
+                <p>2. Equip: Single-stranded DNA as a repair template to introduce distinct target sites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Equip.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 info">
+                <p>3. Flip: FLP recombinase-mediated cassette exchange (RMCE) between pairs of target sites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Flip.png">
+            </div>
         </div>
     </div>
+
 
 </body>
 

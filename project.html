@@ -7,24 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="project.css">
     <!-- JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                anchors: ['problem', 'solution', 'learn'],
-                navigation: true,
-                loopBottom: true,
-                loopTop: true,
-                responsiveWidth: 750,
-                responsiveHeight: 400,
-                afterResponsive: function (isResponsive) { }
-            });
-        });
-    </script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 
@@ -105,49 +90,53 @@
     </nav>
 
     <!-- Content -->
-    <div class="container mainContent" id="fullpage">
-        <!-- Description -->
-        <div class="section">
-            <h1>What is Astroplastic?</h1>
+    <div class="container maincontent">
+        <h1>OUR PROJECT</h1>
+        <h2>The Problem</h2>
+        <br>
+        <p>Governments and private enterprises alike are gearing up for travel across our Solar System. Plans to colonize nearby
+            planets are underway, with Elon Musk spearheading the initiative to put a human colony on Mars by 2030. In a
+            parallel vein, NASA is planning a manned exploratory mission to Mars as soon as the 2030s. Several other space
+            agencies have similar plans and timelines for their own respective Mars explorations. This exciting time in our
+            history nonetheless comes with the challenges of long-term space travel.
             <br>
-            <p>Governments and private enterprises alike are gearing up for travel across our Solar System. Plans to colonize
-                nearby planets are underway, with Elon Musk spearheading the initiative to put a human colony on Mars by
-                2030. In a parallel vein, NASA is planning a manned exploratory mission to Mars as early as the 2030s. Several
-                other space agencies have similar plans and timelines for their own Mars explorations. This exciting time
-                in our history nonetheless comes with the challenges of long-term space travel. Two ecological and economic
-                challenges arise: the sustainable management of waste produced on a spaceship and the high cost of shipping
-                materials to space.
-                <br>
-                <br>This year, the University of Calgary's project involves using genetically engineered E. coli to turn human
-                waste into bioplastics. We envision our project as a start-to-finish integrated system that can be used in
-                space to generate items useful to astronauts during early Mars missions. This will solve the problem of waste
-                management by upcycling solid human waste into a usable product. It will also reduce astronautical costs,
-                as expensive fuel routinely used to ship materials to space can be saved.</p>
-        </div>
-        <!-- Demonstration -->
-        <div class="section">
-            <h1>How does it work?</h1>
+            <br>Waste management on Mars will be paramount because manned missions will need to recover as much water and oxygen
+            as possible to sustain life. Human waste must also be treated to minimize health risks for the crew of a Mars
+            mission. All of this must be accomplished while preserving the natural Martian environment.
             <br>
-            <p>Poly(3-hydroxybutyrate) (PHB) is a linear polyester and is a product of bacterial fermentation of some sugars
-                or lipids (Anjum, 2016). PHB is used by bacteria (such as Ralstonia eutropha and Pseudomonas aeruginosa)
-                (Anderson, 1990) as carbon and energy storage (Tsuge, 2003). PHB is one preferred alternative to petroleum-based
-                plastics due to its biodegradability (Tsuge, 2003) and the potential for more environmentally friendly manufacturing
-                processes. Current PHB production processes are costly, which limits industrial scale use and application
-                of PHB (Anjum, 2016). We aim to eliminate the cost of using lipid or sugar feedstocks in PHB-production facilities
-                by using human solid waste as a feedstock. We have engineered recombinant Escherichia coli to utilize genes
-                from native PHB-producing bacteria. These genes code for enzymes in the glycolysis and fatty acid beta-oxidation
-                pathways (which break down sugars and lipids, respectively), and in PHB production. We thus hope to optimize
-                PHB production by improving yields and cutting costs, which would promote the use of PHB in industry. This
-                process could also improve the management of human waste by producing a value-added product.
-                <br>
-                <br>We have focused our efforts on PHB synthesis in engineered E. coli cells, PHB secretion from these cells
-                for easy harvest, the overall start-to-finish process development, and how our project will impact the future
-                of space travel through our human practices work.</p>
-        </div>
-        <!-- Learn More -->
-        <div class="section">
-            <h1>Learn more about our project by clicking on the buttons below!</h1>
-        </div>
+            <br>The current cost of shipping materials up to space is $10,000 USD per pound due to the high price of fuel (Hsu,
+            2011). This expense will constrain early Mars mission crews in the supplies that they can bring or ship from
+            Earth to Mars, and may not allow astronauts to account for every tool they may require during their mission.
+            One way to mitigate this challenge is to develop a system to produce necessary items in space as needs arise.</p>
+        <br>
+        <br>
+        <h2>Our Solution</h2>
+        <br>
+        <p>Our team is working on a unique solution to both of the aforementioned challenges of future Mars missions: we intend
+            to upcycle human waste by using it as a feedstock for E. coli engineered to produce bioplastic, which can then
+            be 3D printed into useful tools onsite.
+            <br>
+            <br>Poly(3-hydroxybutyrate) (PHB), a bioplastic, is produced in nature by many bacterial species. Literature has
+            shown that PHB can be produced using a variety of feedstocks, including glucose and volatile fatty acids (VFAs)
+            (Albuquerque et al., 2011). Since human waste contains both glucose and VFAs, it is a potentially useful feedstock
+            for PHB production.
+            <br>
+            <br>Our team engineered E. coli to express PHB-producing genes, which we codon-optimized to increase the efficiency
+            of PHB production. We then modified native E. coli secretion pathways so the cells would release the PHB they
+            produced. This allows for a continuous PHB production and secretion process, as opposed to a traditional batch
+            process, which is not user-friendly and requires more time and maintenance. When employed together, these genetic
+            modifications create a novel means of bioplastic production.
+            <br>
+            <br>We also developed a start-to-finish process involving both waste management and PHB production. In the first
+            step of this process, solid human waste is collected and fermented with naturally occurring enterogenic bacteria
+            to increase the concentration of VFAs. As a part of this process, the solids from the waste settle and the liquid
+            rises to the surface of the fermentation tank. Next, the VFA-concentrated liquid in the fermentation tank is
+            separated from the solid particles by centrifugation, sterilized by filtration, and passed to a bioreactor containing
+            our engineered PHB-producing E. coli. Once the PHB is synthesized and secreted, it can be continuously collected
+            and extracted from the liquid stream. The resulting liquid can be recycled into drinking water, while PHB particles
+            can be used in a Selective Laser Sintering (SLS) 3D printer to generate items useful to astronauts.</p>
+        <br>
+        <br>
     </div>
 
 </body>
