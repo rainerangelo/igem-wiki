@@ -1,0 +1,121 @@
+.dark-grey {
+    fill: #44414d;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 0.03108883px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}
+
+.light-grey {
+    fill: #5f5b6b;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 0.03108883px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}
+
+.dark-green {
+    fill: #98cca2;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 0.03108883px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}
+
+.light-green {
+    fill: #a8e0b2;
+    fill-opacity: 1;
+    stroke: none;
+    stroke-width: 0.02207453px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-opacity: 1;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: matrix(1.3829225,0,0,1.3829225,-103.49477,-58.214956);
+    }
+    100% {
+        transform: matrix(1.3829225,0,0,1.3829225,-103.49477,-5.214956);
+    }
+}
+
+@keyframes disappearleft {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-58px, -38px);
+    }
+}
+
+@keyframes disappearright {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(58px, -38px);
+    }
+}
+
+@keyframes appearleft {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(58px, -38px);
+    }
+}
+
+@keyframes appearright {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-58px, -38px);
+    }
+}
+
+.move-up {
+    animation: moveUp 2s infinite;
+    animation-timing-function: linear;
+}
+
+.disappear-left {
+    animation: disappearleft 2s infinite;
+    animation-timing-function: linear;
+}
+
+.disappear-right {
+    animation: disappearright 2s infinite;
+    animation-timing-function: linear;
+}
+
+.disappear-left-delay {
+    animation: disappearleft 2s infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.disappear-right-delay {
+    animation: disappearright 2s infinite;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+.appear-left {
+    animation: appearleft 2s infinite;
+    animation-timing-function: linear;
+}
+
+.appear-right {
+    animation: appearright 2s infinite;
+    animation-timing-function: linear;
+}
