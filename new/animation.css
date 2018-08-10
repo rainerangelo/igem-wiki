@@ -1,5 +1,6 @@
 svg {
-    outline: 1px solid transparent;
+    /* outline: 1px solid transparent; */
+    -webkit-backface-visibility: hidden
 }
 
 .dark-grey {
@@ -23,7 +24,8 @@ svg {
 }
 
 .dark-green {
-    fill: #98cca2;
+    /* fill: #98cca2; */
+    fill: #69b09c;
     fill-opacity: 1;
     stroke: none;
     stroke-width: 0.03108883px;
@@ -33,7 +35,8 @@ svg {
 }
 
 .light-green {
-    fill: #a8e0b2;
+    /* fill: #a8e0b2; */
+    fill: #7ccfb8;
     fill-opacity: 1;
     stroke: none;
     stroke-width: 0.02207453px;
