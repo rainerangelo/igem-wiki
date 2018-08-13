@@ -1,7 +1,7 @@
 body {
     /* background-color: rgb(50, 48, 49); */
     background-color: white;
-    color: black;
+    color: rgba(0, 0, 0, 0.5);
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -21,8 +21,9 @@ body {
 }
 
 .navbar-nav > li {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    white-space: nowrap;
 }
 
 .navbar-logo {
@@ -63,8 +64,12 @@ p {
     text-align: justify;
 }
 
-svg {
+#moving-helix {
     height: 400px;
+}
+
+#blinking-arrows {
+    height: 54px;
 }
 
 #fp-nav ul li,
@@ -94,23 +99,30 @@ svg {
     margin: -5px 0px 0px -5px;
 }
 
-.footer {
-    bottom: 0;
-    left: 0;
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    line-height: 3;
     position: fixed;
-    width: 100%;
+    text-align: center;
+}
+
+.bottom-right {
+    bottom: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    position: fixed;
+    right: 70px;
+    text-align: center;
 }
 
 .social-media-icon {
-    color: #44414d;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 24px;
 }
 
-.social-media {
-    left: 30px;
-    bottom: 30px;
-    line-height: 3;
-    text-align: center;
+.social-media-icon:hover {
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .vertical-align {
@@ -127,4 +139,13 @@ svg {
 #home-subtitle {
     color: #44414d;
     font-size: 47px;
+}
+
+#social-media-icons {
+    list-style: none;
+}
+
+#instructions {
+    display: block;
+    font-size: 14px;
 }

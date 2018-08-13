@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team:Calgary - 2018.igem.org</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="teamLS.css">
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                // navigation: true,
+                loopBottom: true,
+                loopTop: true,
+                responsiveWidth: 750,
+                responsiveHeight: 400,
+                afterResponsive: function (isResponsive) { }
+            });
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $('.overlay').on("touchstart", function (e) {
+        "use strict"; //satisfy the code inspectors
+        var link = $(this); //preselect the link
+        if (link.hasClass('hover')) {
+            return true;
+        } else {
+            link.addClass("hover");
+            $('.overlay').not(this).removeClass("hover");
+            e.preventDefault();
+            return false; //extra, and to make sure the function has consistent return points
+        }
+    });
+      </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="navbar-logo" src="BasicLogo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link underline-animation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link underline-animation" href="#">Notebook</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link underline-animation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link underline-animation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Human Practices
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link underline-animation" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Judging
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Content -->
+    <h1 id="team-title">THE TEAM</h1>
+    <div class="backBox"></div>
+    <div class="container mainContent" id="fullpage">
+        <!-- Description -->
+        <div class="section">
+          <h1> team pic </h1>
+      </div>
+        <!-- Page 2 -->
+        <div class="section">
+          <div class="row vertical-align">
+              <div class="col-3 person">
+                <img class="member-logo" src="BasicLogo.png">
+                <div class="overlay">
+           <div class="text">Bjorn Livingston </br>
+Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
+   </div>
+          </div>
+              </div>
+              <div class="col-3 person">
+                <img class="member-logo" src="BasicLogo.png">
+                <div class="overlay">
+           <div class="text">Lauren Bjergsen </br>
+Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
+   </div>
+          </div>
+              </div>
+              <div class="col-3 person">
+                <img class="member-logo" src="BasicLogo.png">
+                <div class="overlay">
+           <div class="text">Bjorn Livingston </br>
+Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
+   </div>
+          </div>
+              </div>
+              <div class="col-3 person">
+                <img class="member-logo" src="BasicLogo.png">
+                <div class="overlay">
+           <div class="text">Lauren Bjergsen </br>
+Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
+   </div>
+          </div>
+              </div>
+      </div>
+    </div>
+        <!-- Page 3 -->
+        <div class="section">
+          <div class="row vertical-align">
+              <div class="col-3">
+                <img class="member-logo" src="BasicLogo.png">
+              </div>
+              <div class="col-3">
+                Bjorn Livingston </br>
+Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
+        </div>
+        <div class="col-3">
+          <img class="member-logo" src="BasicLogo.png">
+        </div>
+        <div class="col-3">
+          Lauren Bjergsen </br>
+Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
+  </div>
+      </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-1 social-media">
+                <a href="#">
+                    <i class="fab fa-facebook-f social-media-icon"></i>
+                </a>
+                <br>
+                <a href="#">
+                    <i class="fab fa-instagram social-media-icon"></i>
+                </a>
+                <br>
+                <a href="#">
+                    <i class="fab fa-twitter social-media-icon"></i>
+                </a>
+                <br>
+                <a href="#">
+                    <i class="far fa-envelope social-media-icon"></i>
+                </a>
+            </div>
+            <div class="col-11">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
