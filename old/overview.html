@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Team:Calgary - 2018.igem.org</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        #scienceBit {
+            margin-top: 180px;
+            margin-bottom: 180px;
+        }
+
+        .info {
+            text-align: justify;
+            padding: 30px;
+        }
+
+        hr {
+            border-color: white;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Snip Equip Flip</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Project
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Problem/Description</a>
+                        <a class="dropdown-item" href="#">Synthesis</a>
+                        <a class="dropdown-item" href="#">Secretion</a>
+                        <a class="dropdown-item" href="#">Process</a>
+                        <a class="dropdown-item" href="#">Applied Design</a>
+                        <a class="dropdown-item" href="#">Experiments</a>
+                        <a class="dropdown-item" href="#">Results</a>
+                        <a class="dropdown-item" href="#">Composite Parts</a>
+                        <a class="dropdown-item" href="#">Modelling</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notebook</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Team
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Team Members</a>
+                        <a class="dropdown-item" href="#">Attributions</a>
+                        <a class="dropdown-item" href="#">Sponsors</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Human Practices
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">HP Summary</a>
+                        <a class="dropdown-item" href="#">HP Silver</a>
+                        <a class="dropdown-item" href="#">HP Gold/Integrated HP</a>
+                        <a class="dropdown-item" href="#">Collaborations</a>
+                        <a class="dropdown-item" href="#">Engagement</a>
+                        <a class="dropdown-item" href="#">Safety</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Judging
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Medal Requirements</a>
+                        <a class="dropdown-item" href="#">Interlab</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container" id="scienceBit">
+        <h1>
+            How We're Moving Towards a Safer Gene Therapy
+        </h1>
+        <div class="row info">
+            While viral vectors have successfully demonstrated the potential of gene therapy, safety concerns, such as the random integration
+            of therapeutic DNA, which can lead to cancer and severe immune responses, constrain their use to severe diseases.
+            In order for gene therapies to benefit a greater number of people, for a wider range of indications, the risks
+            of viral delivery must be overcome.
+        </div>
+        <div class="row info">
+            Targeted integration of DNA in mammalian genomes has been made simple with CRISPR/Cas9. Unfortunately, the insertion of large
+            (> 1 kb) DNA inserts has proven too inefficient for therapeutic applications, restricting the use of CRISPR-mediated
+            knock-in to relatively small inserts. In light of these constraints, the University of Calgary iGEM team has
+            designed a targeted gene integration platform to build a safer gene therapy.
+        </div>
+        <div class="row">
+            <div class="col-6 info">
+                There are two pillars at the core of our platform. The first consists of a two-phase integration system, based on CRISPR/Cas9
+                and Flp recombinase. By inserting small Flp recombinase target (FRT) sites using CRISPR/Cas9, Flp can be
+                used to integrate large inserts. To minimize the risk of off-target effects, we will target a "genomic safe
+                harbor" where DNA can safely be introduced.
+            </div>
+            <div class="col-6 info">
+                Furthermore, we are minimizing off-target integration by employing Cas9 nickase with an ssDNA template. This second pillar
+                leverages regulatory elements (REs) found naturally in the human genome to keep therapeutic DNA active and
+                isolated from its genomic context. In particular, we are using ubiquitously-acting chromatin-opening elements
+                (UCOEs) to maintain internal control of transgene expression, while preventing disruption of the host genome
+                with insulators.
+            </div>
+        </div>
+        <hr>
+        <br>
+        <h1>
+            How Snip, Equip, Flip Works
+        </h1>
+        <div class="row">
+            <div class="col-6 info">
+                <p>1. Snip: Paired nicks near the genomic target to initiate DNA repair.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Snip.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 info">
+                <p>2. Equip: Single-stranded DNA as a repair template to introduce distinct target sites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Equip.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 info">
+                <p>3. Flip: FLP recombinase-mediated cassette exchange (RMCE) between pairs of target sites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 info">
+                <img src="img/Flip.png">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
