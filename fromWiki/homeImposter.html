@@ -1,0 +1,126 @@
+{{:Team:Calgary/NavBar}}
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Team:Calgary - 2018.igem.org</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/WikiResetCSSImposter?action=raw&ctype=text/css">
+    <!-- Bootstrap 4's CSS -->
+    <!-- <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/BootstrapMinCSS?action=raw&ctype=text/css"> -->
+    <!-- Long Scroll CSS -->
+    <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/JQueryFullPageCSS?action=raw&ctype=text/css">
+    <!-- Font Awesome CSS -->
+
+    <!-- UH OH! CDN! -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Home Page Style Sheet -->
+    <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/HomePageCSSImposter?action=raw&ctype=text/css">
+    <!-- Scripts -->
+
+    <!-- Long Scroll JS -->
+    <script src="http://2018.igem.org/Team:Calgary/JQueryMinJSImposter?action=raw&ctype=text/javascript"></script>
+    <script src="http://2018.igem.org/Team:Calgary/JQueryFullPageJSImposter?action=raw&ctype=text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['Project', 'Software', 'Human Practices', 'Contact Us'],
+                //sectionsColor: ['#F53240', '#F9BE02', '#02C8A7', '#AF7AC5'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Project', 'Software', 'Human Practices', 'Contact Us'],
+                css3: true,
+                responsiveWidth: 750,
+                responsiveHeight: 400,
+                loopTop: true,
+                loopBottom: true,
+                afterResponsive: function (isResponsive) { }
+            });
+        });
+    </script>
+    <!-- Bootstrap 4's JS -->
+    <!-- <script src="http://2018.igem.org/Team:Calgary/BootstrapBundleMinJSImposter?action=raw&ctype=text/javascript"> --></script>
+    <style>
+        html body {
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            color: black !important;
+            font-family: 'Quicksand', sans-serif !important;
+            font-weight: normal !important;
+        }
+
+        accent {
+            color: 7CCFB8 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div id="fullpage">
+        <!-- Project Preview -->
+        <div class="section" id="section0">
+            <div class="intro" id="slide0">
+                SNIP
+                <accent>EQUIP</accent> FLIP
+                <p>Towards a Safer Gene Therapy</p>
+            </div>
+        </div>
+        <!-- Software Preview -->
+        <div class="section" id="section1">
+            <div class="intro" id="slide1">
+                <h1>Software</h1>
+                <p>We made a bot. It does some cool stuff.</p>
+            </div>
+        </div>
+        <!-- Human Practices Preview -->
+        <div class="section" id="section2">
+            <div class="intro" id="slide2">
+                <h1>Human Practices</h1>
+                <p>Humans were involved in the creation of this project.</p>
+            </div>
+        </div>
+        <!-- Social Media -->
+        <div class="section" id="section3">
+            <div class="intro" id="slide3">
+                <h1>Contact Us</h1>
+                <ul id="social-media-list">
+                    <li>
+                        <a href="#">
+                            <img src="http://2018.igem.org/wiki/images/0/0e/T--Calgary--fb.png" style="height:2.4em">
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://2018.igem.org/wiki/images/3/34/T--Calgary--insta.png" style="height:2.4em">
+                            </i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://2018.igem.org/wiki/images/8/84/T--Calgary--twitter.png" style="height:2.4em">
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="http://2018.igem.org/wiki/images/4/46/T--Calgary--mail.png" style="height:2.4em">
+                            <span>Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

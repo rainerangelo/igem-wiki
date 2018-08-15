@@ -50,6 +50,8 @@ body {
 .maincontent {
     margin-top: 200px;
     margin-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 h1 {
@@ -169,10 +171,10 @@ h5 {
     font-size: 14px;
 }
 
-#infotitle {
+.infotitle {
     text-align: left;
 }
 
-#infosubtitle {
+.infosubtitle {
     text-align: left;
 }
