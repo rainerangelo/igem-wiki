@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
-body {
+html body {
     background-color: white;
-    color: rgb(50, 48, 49);
-    font-family: 'Quicksand', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar {
@@ -15,52 +13,116 @@ body {
     z-index: 1;
 }
 
-.dropdown-toggle::after {
-    display:none;
-}
-
-.navbar-nav.navbar-center {
+.navbar-nav {
     position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
 }
 
-.maincontent {
-    margin-top: 180px;
-    margin-bottom: 180px;
+.navbar-nav > li {
+    white-space: nowrap;
 }
 
-h1 {
+.dropdown-menu > a:focus {
+    background-color: #7CCFB8;
+    color: white;
+}
+
+.navbar-logo {
+    height: 90px;
+}
+
+.underline-animation::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #7CCFB8;
+    transition: width .3s;
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.collapse.show .navbar-nav>li {
+    background-color: white !important;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    line-height: 3;
+    position: fixed;
     text-align: center;
 }
 
-p {
-    text-align: justify;
+.bottom-right {
+    bottom: 20px;
+    display: inline-block;
+    line-height: 1.5;
+    position: fixed;
+    right: 70px;
+    text-align: center;
 }
 
-#fp-nav ul li,
-.fp-slidesNav ul li {
-    height: 14px;
+.social-media-icon {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
 }
 
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
-    height: 14px;
-    width: 14px;
-    margin: -7px 0 0 -7px;
+.social-media-icon:hover {
+    color: rgba(0, 0, 0, 0.9);
 }
 
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    border: 2px solid rgb(50, 48, 49);
-    background: rgba(255, 255, 255, 0);
+#social-media-icons {
+    list-style: none;
 }
 
-#fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+/* Responsiveness */
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    
+    .navbar-nav > li {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .dropdown-menu-center {
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar {
+        background: white;
+        padding: 30px;
+    }
+
+    .navbar-nav {
+        padding-top: 30px;
+    }
+
+    .navbar-logo {
+        height: 60px;
+    }
+
+    .underline-animation::after {
+        display: none;
+    }
+
+    .bottom-left {
+        display: none;
+    }
+
+    .bottom-right {
+        display: none; 
+    }
 }

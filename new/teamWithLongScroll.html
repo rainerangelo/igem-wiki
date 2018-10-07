@@ -32,19 +32,19 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-      $('.overlay').on("touchstart", function (e) {
-        "use strict"; //satisfy the code inspectors
-        var link = $(this); //preselect the link
-        if (link.hasClass('hover')) {
-            return true;
-        } else {
-            link.addClass("hover");
-            $('.overlay').not(this).removeClass("hover");
-            e.preventDefault();
-            return false; //extra, and to make sure the function has consistent return points
-        }
-    });
-      </script>
+        $('.overlay').on("touchstart", function (e) {
+            "use strict"; //satisfy the code inspectors
+            var link = $(this); //preselect the link
+            if (link.hasClass('hover')) {
+                return true;
+            } else {
+                link.addClass("hover");
+                $('.overlay').not(this).removeClass("hover");
+                e.preventDefault();
+                return false; //extra, and to make sure the function has consistent return points
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -121,63 +121,69 @@
     <div class="container mainContent" id="fullpage">
         <!-- Description -->
         <div class="section">
-          <h1> team pic </h1>
-      </div>
+            <h1> team pic </h1>
+        </div>
         <!-- Page 2 -->
         <div class="section">
-          <div class="row vertical-align">
-              <div class="col-3 person">
-                <img class="member-logo" src="BasicLogo.png">
-                <div class="overlay">
-           <div class="text">Bjorn Livingston </br>
-Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
-   </div>
-          </div>
-              </div>
-              <div class="col-3 person">
-                <img class="member-logo" src="BasicLogo.png">
-                <div class="overlay">
-           <div class="text">Lauren Bjergsen </br>
-Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
-   </div>
-          </div>
-              </div>
-              <div class="col-3 person">
-                <img class="member-logo" src="BasicLogo.png">
-                <div class="overlay">
-           <div class="text">Bjorn Livingston </br>
-Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
-   </div>
-          </div>
-              </div>
-              <div class="col-3 person">
-                <img class="member-logo" src="BasicLogo.png">
-                <div class="overlay">
-           <div class="text">Lauren Bjergsen </br>
-Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
-   </div>
-          </div>
-              </div>
-      </div>
-    </div>
+            <div class="row vertical-align">
+                <div class="col-3 person">
+                    <img class="member-logo" src="BasicLogo.png">
+                    <div class="overlay">
+                        <div class="text">Bjorn Livingston </br>
+                            Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In
+                            school, he is in clubs and he likes it there too.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 person">
+                    <img class="member-logo" src="BasicLogo.png">
+                    <div class="overlay">
+                        <div class="text">Lauren Bjergsen </br>
+                            Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break
+                            your ankles. In school, she is in clubs just like Bjorn.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 person">
+                    <img class="member-logo" src="BasicLogo.png">
+                    <div class="overlay">
+                        <div class="text">Bjorn Livingston </br>
+                            Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In
+                            school, he is in clubs and he likes it there too.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 person">
+                    <img class="member-logo" src="BasicLogo.png">
+                    <div class="overlay">
+                        <div class="text">Lauren Bjergsen </br>
+                            Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break
+                            your ankles. In school, she is in clubs just like Bjorn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Page 3 -->
         <div class="section">
-          <div class="row vertical-align">
-              <div class="col-3">
-                <img class="member-logo" src="BasicLogo.png">
-              </div>
-              <div class="col-3">
-                Bjorn Livingston </br>
-Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In school, he is in clubs and he likes it there too.
-        </div>
-        <div class="col-3">
-          <img class="member-logo" src="BasicLogo.png">
-        </div>
-        <div class="col-3">
-          Lauren Bjergsen </br>
-Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break your ankles. In school, she is in clubs just like Bjorn.
-  </div>
-      </div>
+            <div class="row vertical-align">
+                <div class="col-3">
+                    <img class="member-logo" src="BasicLogo.png">
+                </div>
+                <div class="col-3">
+                    Bjorn Livingston </br>
+                    Bjorn is a biological software human rights student. He likes to bake and dance with his homies when he has free time. In
+                    school, he is in clubs and he likes it there too.
+                </div>
+                <div class="col-3">
+                    <img class="member-logo" src="BasicLogo.png">
+                </div>
+                <div class="col-3">
+                    Lauren Bjergsen </br>
+                    Lauren is a biological science student. She enjoys long walks on the beach and playing basketball. She can probably break
+                    your ankles. In school, she is in clubs just like Bjorn.
+                </div>
+            </div>
         </div>
     </div>
     <!-- Footer -->

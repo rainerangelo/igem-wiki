@@ -1,0 +1,475 @@
+{{Team:Calgary-Reset}} {{Team:Calgary/Rocket}} {{Team:Calgary/StyleSheets/stylingdva.css}}
+<html>
+
+<head>
+    <script src="https://use.fontawesome.com/e9ba5c663b.js"></script>
+
+    <style>
+        .wrapper {
+            width: 840px;
+            margin: auto;
+        }
+
+        .tiles {}
+
+        @media only screen and (max-width: 1131px) {
+            .wrapper {
+                width: 640px;
+            }
+        }
+
+
+        @media only screen and (max-width: 935px) {
+            .wrapper {
+                width: 440px;
+            }
+        }
+
+        @media only screen and (max-width: 445px) {
+            .wrapper {
+                width: 240px;
+            }
+        }
+
+
+
+        .box {
+            position: relative;
+            display: inline-block;
+            height: 200px;
+            transition: 0.5s;
+            cursor: pointer;
+            -webkit-transition: 0.5s;
+            padding: 0.2rem;
+            padding-bottom: 0.4rem;
+
+        }
+
+        .box::before,
+        .box::after {
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+
+            -webkit-transform: scale(0);
+            transition: 0.5s;
+        }
+
+        .foo::before {
+            border-bottom: 10px solid #FFF;
+            border-left: 10px solid #FFF;
+            border-radius: 10px;
+            -webkit-transform-origin: 0 100%;
+        }
+
+        .foo::after {
+            border-top: 10px solid #FFF;
+            border-right: 10px solid #FFF;
+            border-radius: 10px;
+            -webkit-transform-origin: 100% 0%;
+        }
+
+
+        .box:hover::after,
+        .box:hover::before {
+            -webkit-transform: scale(1);
+        }
+
+
+
+
+
+        .container:after {
+            /*clear float*/
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container>div {
+            float: left;
+            width: 33%;
+            box-sizing: border-box;
+            padding: 2%;
+        }
+
+        @media only screen and (max-width: 58.75rem) {
+            .container>div {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        #HQ_page h2 {
+            text-align: center;
+        }
+
+
+
+
+        #Banner div>p,
+        #Banner p {
+            text-indent: 0px !important;
+        }
+
+        #HQ_page p {
+            text-indent: 0px !important;
+        }
+
+        #Banner body {
+            width: 100% !important;
+        }
+
+
+        #HorizontalGame {
+            text-align: center;
+        }
+
+        #HorizontalGame img {
+            max-width: 100%;
+        }
+
+        .leftColumn img {
+            max-width: 100%;
+
+        }
+
+        .rightColumn {
+            padding: 2em;
+            background-color: #ccc;
+            width: 74%;
+            min-height: 100%;
+            display: table;
+        }
+
+        .leftColumn {
+            width: 10%;
+            padding: 0em;
+            min-height: 100%;
+        }
+
+        #TableContainer {
+            position: relative;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+        }
+
+        #MainText {
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+
+    <title>Header</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+    <LINK REL="SHORTCUT ICON" HREF="http://2017.igem.org/wiki/images/3/32/Calgary2017_Patch.png">
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var ulNav = "#nav", openNav = "active";
+
+
+            $('.toggle-menu').click(function (e) {
+                if ($(ulNav).hasClass(openNav)) {
+                    $(ulNav).removeClass(openNav)
+                } else {
+                    $(ulNav).addClass(openNav);
+                }
+                e.preventDefault();
+            });
+
+            $('.toggle-drop').on('click', function (e) {
+                $('ul[id^="drop"]').hide();
+                $(this).next().slideToggle(400);
+                $(this).toggleClass('active');
+                e.preventDefault();
+            });
+
+            $('.toggle-drop2').on('click', function (e) {
+                $('ul[id^="drop2"]').hide();
+                $(this).next().slideToggle(400);
+                $(this).toggleClass('active2');
+                e.preventDefault();
+            });
+
+        })
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="mobile-display">
+        <h2 class="logo">
+            <img src="http://2017.igem.org/wiki/images/3/32/Calgary2017_Patch.png" alt="iGEM">
+        </h2>
+    </div>
+    <div class="nav-bar">
+        <div id="TopBar">
+            <p>
+                <img id="Banner" src="http://2017.igem.org/wiki/images/a/a0/Calgary2017_Banner.png">
+            </p>
+            <div class="nav" class="nav">
+                <a href="#" class="toggle-menu">&#9776;</a>
+                <ul class="nav-list nav-open" id="nav">
+                    <li></li>
+                    <li>
+                        <a href="http://2017.igem.org/Team:Calgary">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-drop">Project</a>
+                        <ul id="drop">
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Description">Problem/Description</a>
+                            </li>
+                            <li>
+                                <a href="#" class="toggle-drop2">Synthesis
+                                    <i class="fa fa-chevron-down"> </i>
+                                </a>
+                                <ul id="drop2">
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/Synthesis">Synthesis Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/BetaOxidation">Beta Oxidation</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/Glycolysis">Glycolysis</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Secretion">Secretion</a>
+                            </li>
+                            <li>
+                                <a href="#" class="toggle-drop2">Process
+                                    <i class="fa fa-chevron-down"> </i>
+                                </a>
+                                <ul id="drop2">
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/Process">Process Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/VFA_Fermentation">VFA Fermentation</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/SolidLiquidSeparation">Solid-Liquid Separation</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/PHB_Fermentation">PHB Fermentation</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/Extraction">Extraction</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://2017.igem.org/Team:Calgary/Products">Products</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Applied_Design">Applied Design</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Experiments">Experiments</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Results">Results</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Composite_Part">Composite Parts</a>
+                            </li>
+
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Model">Modelling</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="http://2017.igem.org/Team:Calgary/Journal">Notebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-drop">Team</a>
+                        <ul id="drop">
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Team">Team Members</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Attributions">Attributions</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Sponsors">Sponsors</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-drop">Human
+                            <br>Practices</a>
+                        <ul id="drop">
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Human_Practices">HP Summary</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/HP/Silver">HP Silver</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/HP/Gold_Integrated">HP Gold/Integrated HP</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Collaborations">Collaborations</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Engagement">Engagement</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/Safety">Safety</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-drop">Judging</a>
+                        <ul id="drop">
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/MedalRequirements">Medal Requirements</a>
+                            </li>
+                            <li>
+                                <a href="http://2017.igem.org/Team:Calgary/InterLab">Interlab</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="MainContent">
+
+</html>
+{{{CONTENT|
+<html>
+<h1>ASTRO Plastic</h1>
+
+<div id="OneCol">
+    <img src="http://2017.igem.org/wiki/images/7/7b/Calgary2017_BoardGameBackground.png">
+</div>
+
+
+
+<div id="HorizontalGame">
+    <img src="http://2017.igem.org/wiki/images/6/65/Calgary2017_SampleBoard1.png">
+</div>
+
+<div id="TableContainer">
+    <div class="leftColumn">
+        <img src="http://2017.igem.org/wiki/images/2/2a/Calgary2017_SampleBoard2.png">
+    </div>
+    <div class="rightColumn">
+        <div id="MainText">
+            <p>Governments and private enterprises alike are gearing up for travel across the Solar System. Plans to colonize
+                nearby planets are underway, with Elon Musk spearheading the initiative to put a human colony on Mars by
+                2030. In a parallel vein, NASA is planning a manned exploratory mission to Mars as soon as the 2030s. Several
+                other space agencies have similar plans and timelines for their own respective Mars explorations. This exciting
+                time in our history nonetheless comes with the challenges of long-term space travel. Two ecological and economical
+                challenges arise: the
+                <b>sustainable management of waste produced</b> on a spaceship and the
+                <b>high cost of shipping materials to space</b>.</p>
+        </div>
+    </div>
+</div>
+
+<div id="HorizontalGame">
+    <img src="http://2017.igem.org/wiki/images/6/65/Calgary2017_SampleBoard1.png">
+</div>
+
+
+<p>Governments and private enterprises alike are gearing up for travel across the Solar System. Plans to colonize nearby planets
+    are underway, with Elon Musk spearheading the initiative to put a human colony on Mars by 2030. In a parallel vein, NASA
+    is planning a manned exploratory mission to Mars as soon as the 2030s. Several other space agencies have similar plans
+    and timelines for their own respective Mars explorations. This exciting time in our history nonetheless comes with the
+    challenges of long-term space travel. Two ecological and economical challenges arise: the
+    <b>sustainable management of waste produced</b> on a spaceship and the
+    <b>high cost of shipping materials to space</b>.</p>
+
+<p>This year, our project involves using genetically engineered
+    <b>
+        <i>E. coli</i>
+    </b> to turn human waste into
+    <b>bioplastics</b>. We envision our project as a start-to-finish integrated system that can be used in space to generate
+    items useful to astronauts during early Mars missions. This will solve the problem of waste management by upcycling solid
+    human waste into a usable product. It will also reduce astronautical costs, as fuel typically used to ship materials
+    to space can be saved.</p>
+
+<div class="tiles">
+    <div class="wrapper">
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/4/43/Calgary2017_SynthesisTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/5/5c/Calgary2017_SecretionTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/7/7e/Calgary2017_ProcessTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/4/43/Calgary2017_SynthesisTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/7/7e/Calgary2017_ProcessTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/f/f5/Calgary2017_HPTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/8/87/Calgary2017_ModelingTile.png">
+        </div>
+        <div class="box foo">
+            <img src="http://2017.igem.org/wiki/images/f/f5/Calgary2017_HPTile.png">
+        </div>
+    </div>
+</div>
+
+Test
+
+</html>
+}}}
+<html>
+
+<div id="BottomFooter">
+    <div id="SocialMedia">
+        <a href="https://www.facebook.com/igemcalgary/">
+            <img src="http://2017.igem.org/wiki/images/e/e3/Calgary2017_FBButton.png">
+        </a>
+        <a href="https://twitter.com/igemcalgary?lang=en">
+            <img src="http://2017.igem.org/wiki/images/9/92/Calgary2017_TwitterButton.png">
+        </a>
+        <a href="https://www.instagram.com/igemcalgary/">
+            <img src="http://2017.igem.org/wiki/images/e/e2/Calgary2017_InstaButton.png">
+        </a>
+        <a href="mailto:igem.calgary@gmail.com?subject=iGEM Calgary 2017">
+            <img src="http://2017.igem.org/wiki/images/6/6d/Calgary2017_MainButton.png">
+        </a>
+    </div>
+</div>
+</div>
+
+
+
+
+</body>
+
+</html>
