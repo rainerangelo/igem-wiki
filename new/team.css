@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    background: none;
+    background: linear-gradient(to bottom, white, white, white, white, rgba(255, 255, 255, 0));
     padding: 50px;
     position: fixed;
     top: 0;
@@ -56,11 +56,12 @@ h1 {
 }
 
 h2 {
-    text-align:center;
+    text-align: center;
 }
 
 p {
-    text-align: justify;
+    font-size: 0.8em;
+    text-align: left;
 }
 
 #moving-helix {
@@ -118,7 +119,7 @@ p {
 
 .backbox {
     bottom: 10%;
-    height: 70%;
+    height: 65%;
     /* left: 15%; */
     position: absolute;
     right: 10%;
@@ -129,7 +130,7 @@ p {
 
 .photos-div {
     bottom: 10%;
-    height: 70%;
+    height: 65%;
     position: absolute;
     right: 10%;
     width: 75%;
@@ -148,7 +149,7 @@ p {
 }
 
 .individual-photo {
-    width: 70%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
