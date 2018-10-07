@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     background-color: white;
     color: rgba(0, 0, 0, 0.9);
@@ -49,8 +53,6 @@ body {
 .maincontent {
     margin-top: 200px;
     margin-bottom: 200px;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 h1 {
@@ -198,7 +200,7 @@ h6 {
     transition-duration: 0.4s;
 }
 
-.rotate-open {
+[data-toggle="collapse"] .fa-plus {  
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
@@ -206,10 +208,10 @@ h6 {
     transform: rotate(135deg);
 }
 
-.rotate-close {
-    -webkit-transform: rotate(-135deg);
-    -moz-transform: rotate(-135deg);
-    -ms-transform: rotate(-135deg);
-    -o-transform: rotate(-135deg);
-    transform: rotate(-135deg);
+[data-toggle="collapse"].collapsed .fa-plus {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
