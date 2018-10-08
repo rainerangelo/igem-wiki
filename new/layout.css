@@ -48,8 +48,8 @@ html body {
     display: none;
 }
 
-.collapse.show .navbar-nav>li {
-    background-color: white !important;
+.collapse.show .navbar-nav > li {
+    /* background-color: pink !important; */
 }
 
 .bottom-left {
@@ -57,15 +57,6 @@ html body {
     left: 20px;
     line-height: 3;
     position: fixed;
-    text-align: center;
-}
-
-.bottom-right {
-    bottom: 20px;
-    display: inline-block;
-    line-height: 1.5;
-    position: fixed;
-    right: 70px;
     text-align: center;
 }
 
@@ -106,7 +97,7 @@ html body {
 
 @media only screen and (max-width: 991px) {
     .navbar {
-        background: white;
+        background: pink;
         padding: 30px;
     }
 
@@ -118,16 +109,26 @@ html body {
         height: 60px;
     }
 
+    .navbar-collapse {
+        height: 100vh;
+    }
+
+    .collapsing {
+        -webkit-transition: none;
+        transition: none;
+        display: none;
+    }
+
+    .navbar-nav {
+        height: 100vh;
+    }
+
     .underline-animation::after {
         display: none;
     }
 
     .bottom-left {
         display: none;
-    }
-
-    .bottom-right {
-        display: none; 
     }
 }
 

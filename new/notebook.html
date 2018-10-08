@@ -17,13 +17,23 @@
     <!-- JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script>
-        $(function () {
-            $("[id^=toggle]").on('click', function () {
-                $('#icon' + this.id.match(/\d+$/)[0]).toggleClass("rotate-open");
-            });
-        });
-    </script> -->
+    <script>
+        function openPage(pageName, elmnt) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+                tablinks[i].style.color = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = "#7CCFB8";
+            elmnt.style.color = "white";
+        }
+    </script>
 </head>
 
 <body>
@@ -95,11 +105,20 @@
         </div>
     </nav>
     <!-- Content -->
-    <div class="container maincontent">
+    <div class="container maincontent" id="accordion">
         <h1>NOTEBOOK</h1>
         <br>
         <hr class="primary-line-break">
-        <div id="accordion">
+
+        <div class="tabbuttons">
+            <button class="tablink" onclick="openPage('CRISPR', this)">CRISPR</button>
+            <button class="tablink" onclick="openPage('CME', this)">CME</button>
+            <button class="tablink" onclick="openPage('Dry Lab', this)">Dry Lab</button>
+        </div>
+
+        <div id="CRISPR" class="tabcontent">
+            <br>
+            <p>Below are notes regarding all CRISPR experiments.</p>
             <div class="card">
                 <a id="toggle1" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseOne">
                     <div class="card-header" id="headingOne">
@@ -111,45 +130,7 @@
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -164,45 +145,7 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -217,45 +160,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -270,45 +175,7 @@
                 </a>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -323,45 +190,7 @@
                 </a>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -376,49 +205,202 @@
                 </a>
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                     <div class="card-body row">
-                        <div class="col-md-4">
-                            <h6>
-                                CRISPR
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat consectetur minus quia? Rerum voluptates sequi, a earum
-                                minus optio aut voluptate at eveniet maiores dolorum itaque modi consequatur fugiat iusto.
-                                <br>
-                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae rem magni deserunt
-                                consectetur alias quo sit distinctio quos, quisquam, placeat, architecto ipsam enim voluptate
-                                esse. Pariatur quam vel dolorum nisi!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                UCOE
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quos iusto maxime aliquam sapiente non praesentium ut.
-                                <br>
-                                <br> Vel quo laborum beatae perspiciatis ea, voluptatibus saepe! Animi nostrum numquam similique
-                                obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam voluptatem
-                                rem amet accusamus totam libero illum nam? Vero ab molestiae nesciunt ratione aperiam voluptatum,
-                                earum tenetur ea est, id voluptate?
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6>
-                                DRY LAB
-                            </h6>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea sint asperiores delectus esse tenetur cupiditate saepe
-                                laudantium, cumque aperiam. Ratione consequuntur natus voluptas quidem ad assumenda debitis
-                                sunt non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <br>
-                                <br> Adipisci nulla voluptatem nisi est commodi minima corrupti vero facilis rerum a iure quidem
-                                at placeat, eos consequatur. Facilis maiores expedita impedit!
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="CME" class="tabcontent">
+            <br>
+            <p>Below are notes regarding all CME (chromatin modifying elements) experiments.</p>
+            <div class="card">
+                <a id="toggle7" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseSeven">
+                    <div class="card-header" id="headingSeven">
+                        <i id="icon7" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            May
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle8" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseEight">
+                    <div class="card-header" id="headingEight">
+                        <i id="icon8" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            June
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle9" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseNine">
+                    <div class="card-header" id="headingNine">
+                        <i id="icon9" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            July
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle10" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseTen">
+                    <div class="card-header" id="headingTen">
+                        <i id="icon10" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            August
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle11" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseEleven">
+                    <div class="card-header" id="headingEleven">
+                        <i id="icon11" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            September
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle12" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseTwelve">
+                    <div class="card-header" id="headingTwelve">
+                        <i id="icon12" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            October
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Dry Lab" class="tabcontent">
+            <br>
+            <p>Below are notes regarding all dry lab activities.</p>
+            <div class="card">
+                <a id="toggle13" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseThirteen">
+                    <div class="card-header" id="headingThirteen">
+                        <i id="icon13" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            May
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle14" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseFourteen">
+                    <div class="card-header" id="headingFourteen">
+                        <i id="icon14" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            June
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle15" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseFifteen">
+                    <div class="card-header" id="headingFifteen">
+                        <i id="icon15" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            July
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle16" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseSixteen">
+                    <div class="card-header" id="headingSixteen">
+                        <i id="icon16" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            August
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle17" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseSeventeen">
+                    <div class="card-header" id="headingSeventeen">
+                        <i id="icon17" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            September
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a id="toggle18" class="remove-underline rotate-icon collapsed" href="#" data-toggle="collapse" data-target="#collapseEighteen">
+                    <div class="card-header" id="headingEighteen">
+                        <i id="icon18" class="fas fa-plus accordion-icon" aria-hidden="true"></i>
+                        <h3>
+                            October
+                        </h3>
+                    </div>
+                </a>
+                <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordion">
+                    <div class="card-body row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- Social Media -->
     <div class="bottom-left">
