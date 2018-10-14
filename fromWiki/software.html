@@ -1,0 +1,266 @@
+{{:Team:Calgary/NavBar}}
+
+
+<html lang="en">
+
+<head>
+    <title>Team:Calgary - 2018.igem.org/ImposterInfo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
+    <style>
+        html body {
+            /* background-color: rgb(50, 48, 49); */
+            background-color: white;
+            color: rgba(0, 0, 0, 0.9);
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .underline-animation::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #7CCFB8;
+            transition: width .3s;
+        }
+
+        .underline-animation:hover::after {
+            width: 100%;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .maincontent {
+            margin-top: 5%;
+            margin-bottom: 210px;
+            padding-left: 100px;
+            padding-right: 100px;
+            background-color: #eeedf0;
+        }
+
+        h1 {
+            font-family: 'Josefin Sans', sans-serif !important;
+            font-weight: normal !important;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Josefin Sans', sans-serif !important;
+            line-height: 1.8;
+            text-align: left !important;
+        }
+
+        #moving-helix {
+            height: 400px;
+        }
+
+        #blinking-arrows {
+            height: 54px;
+        }
+
+        .bottom-left {
+            bottom: 20px;
+            left: 20px;
+            line-height: 3;
+            position: fixed;
+            text-align: center;
+        }
+
+        .bottom-right {
+            bottom: 20px;
+            display: inline-block;
+            line-height: 1.5;
+            position: fixed;
+            right: 70px;
+            text-align: center;
+        }
+
+        .social-media-icon {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 24px;
+        }
+
+        .social-media-icon:hover {
+            color: rgba(0, 0, 0, 0.9);
+        }
+
+        .vertical-align {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home-title {
+            color: #44414d;
+            font-size: 80px;
+        }
+
+        #home-subtitle {
+            color: #44414d;
+            font-size: 47px;
+        }
+
+        #social-media-icons {
+            list-style: none;
+        }
+
+        #instructions {
+            display: block;
+            font-size: 14px;
+        }
+
+        h3 {
+            color: #7ccfb8 !important;
+        }
+
+        h5 {
+            color: rgba(0, 0, 0, 0.9);
+            padding-bottom: 10px;
+        }
+
+        .info {
+            padding: 40px;
+        }
+
+        .btn {
+            /* border-radius: 0px; */
+            font-size: 14px;
+        }
+
+        .infotitle {
+            text-align: left;
+        }
+
+        .infosubtitle {
+            text-align: left;
+        }
+
+        .infoImg {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        @media only screen and (max-width: 1050px) {
+            .bottom-left {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (max-width: 400px) {
+            .maincontent {
+                padding-left: 5%;
+                padding-right: 5%;
+                background-color: #FFFFFF;
+            }
+
+            .infotitle {
+                margin-top: 20%;
+            }
+        }
+    </style>
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Content -->
+    <div style=" margin: auto; margin-top: 12%; margin-bottom: 12%" class="container maincontent">
+        <h1 style="transform: translateY(-50%);" class="infotitle">Software</h1>
+        <div style="padding-bottom: 5%; padding-left: 1%; padding-right: 1%;">
+            <h3 class="infosubtitle">SARA: Software Aggregating Research Assistant</h3>
+            <br>
+            <p style="text-indent: 0px">To increase the utility of our outreach, and help the iGEM community, we sought
+                to create a tool that will be useful for years to come. Each year, many teams come to the iGEM
+                competition with software that they developed in conjunction with their research. These tools cater
+                directly to lab work and synthetic biology, and are imperative to the success of a team. At the start
+                of our term, we looked for a tool that could either be directly applied to our work, or could be
+                further built upon to suit our needs. As we searched for software, we found it difficult to sort
+                through the iGEM wiki’s due to the sheer amount of projects, and found that the software descriptions
+                were difficult to discern amongst the wiki content.
+            </p>
+            <br>
+            <p> Inspired by the opportunity to develop a database of iGEM software, we created SARA, the Software
+                Aggregating Research Assistant, to allow for the simplified searching and management of past iGEM
+                software projects. SARA provides the opportunity for old software to be updated and improved to stay
+                current, and decreases the likelihood that teams will create redundant software.
+            </p>
+            <img class="infoImg" style="width: 100%" src="http://2018.igem.org/wiki/images/5/5c/T--Calgary--SARANumSoftware.jpeg">
+            <br> <br>
+            <h3 class="infosubtitle">Why CRISPR?</h3>
+            <br>
+            <p style="text-indent: 0px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, totam
+                laudantium, dolor porro laboriosam
+                illo tenetur velit nulla corrupti quasi non eum amet quod dolores, doloremque eius ad temporibus
+                perferendis!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit explicabo suscipit similique id expedita
+                cum
+                consequatur voluptatibus consectetur adipisci beatae unde, cupiditate inventore. Quis officiis quam
+                porro
+                a expedita non.</p>
+            <br>
+            <p style="text-indent: 0px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rerum vel
+                eius ut dolore, ab obcaecati officiis
+                modi porro, sunt deleniti, consequatur assumenda asperiores aliquid recusandae tenetur neque quae
+                suscipit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio a quam iusto quo, nesciunt odit fuga,
+                similique
+                aspernatur veritatis nemo commodi libero nobis magnam necessitatibus, quidem maiores error debitis
+                minima.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum consequatur, deserunt assumenda
+                odio
+                natus. Quis, ea dolor! Voluptas dolore, facere cum illo sunt consectetur nam a soluta optio
+                perferendis.</p>
+            <br>
+            <p style="text-indent: 0px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sit perferendis
+                eum delectus odit vero saepe,
+                dignissimos aspernatur et libero quisquam minima soluta a suscipit tempora dolores non aliquid ratione?
+                Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Sunt excepturi quod, doloribus et asperiores
+                similique
+                tempora, mollitia possimus doloremque officia deleniti eius aut dolorum fuga reiciendis adipisci esse
+                quisquam
+                quae.
+            </p>
+        </div>
+    </div>
+    <!-- Social Media -->
+    <div class="bottom-left">
+        <ul id="social-media-icons">
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f social-media-icon" aria-hidden="true"></i>
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">
+                    <i class="fab fa-instagram social-media-icon" aria-hidden="true"></i>
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">
+                    <i class="fab fa-twitter social-media-icon" aria-hidden="true"></i>
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">
+                    <i class="far fa-envelope social-media-icon" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
