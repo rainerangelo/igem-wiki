@@ -60,6 +60,10 @@ html body {
     text-align: center;
 }
 
+#social-media-icons {
+    list-style: none;
+}
+
 .social-media-icon {
     color: rgba(0, 0, 0, 0.5);
     font-size: 24px;
@@ -67,10 +71,6 @@ html body {
 
 .social-media-icon:hover {
     color: rgba(0, 0, 0, 0.9);
-}
-
-#social-media-icons {
-    list-style: none;
 }
 
 @media only screen and (min-width: 992px) {
