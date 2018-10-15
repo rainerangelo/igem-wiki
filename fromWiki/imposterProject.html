@@ -1,191 +1,138 @@
 {{:Team:Calgary/NavBar}}
 
-<html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Team:Calgary - 2018.igem.org/ImposterProject</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/WikiResetCSSImposter? 
-    action=raw&ctype=text/css">
-  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/bootstrap_min_css? 
-    action=raw&ctype=text/css">
-  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/jquery_fullPage_css? 
-    action=raw&ctype=text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/animation_css? 
-    action=raw&ctype=text/css">
-  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/projectCSS_css? 
-    action=raw&ctype=text/css">
+  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/animation_css?action=raw&ctype=text/css">
+  <link rel="stylesheet" href="http://2018.igem.org/Team:Calgary/ProjectCSS_css?action=raw&ctype=text/css">
   <!-- JS -->
-  <script src="http://2018.igem.org/Team:Calgary/jquery_3_3_1_min_js? 
-    action=raw&ctype=text/js"></script>
-  <script src="http://2018.igem.org/Team:Calgary/jquery_fullPage_js? 
-    action=raw&ctype=text/js"></script>
-  <script src="http://2018.igem.org/Team:Calgary/bootstrap_min_js? 
-    action=raw&ctype=text/js"></script>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+      } else {
+        document.getElementById("topBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </head>
 
 <body>
-
+  <button onclick="topFunction()" id="topBtn" title="Go to top">TOP</button>
   <!-- Content -->
-  <div class="help">
-    <h1>Our Project</h1>
-    <div class='container section'>
-      <div class='row'>
-        <div class='col-md-4'>
-          <h4 class='centeredTitle'>Food You Will Love</h4>
-          <p class='centeredTitle'>
-            Cook from a globaly inspired, chef-designed menu with 20 recipes (plus desert!) each week.
-          </p>
-        </div>
-        <div class='col-md-4'>
-          <h4 class='centeredTitle'>Flexibility You Crave</h4>
-          <p class='centeredTitle'>
-            Choose your number of servings and nights, then mix and match your dishes in any combination.
-          </p>
-        </div>
-        <div class='col-md-4'>
-          <h4 class='centeredTitle'>
-            Dinnertime, Perfected
-          </h4>
-          <p class='centeredTitle'>
-            Spend time enjoying your food and company because Plated Nights are the greatest nights.
-          </p>
-        </div>
+  <div class="container maincontent">
+    <h1>OUR PROJECT</h1>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 info">
+        <img style="width: 100%" src="http://2018.igem.org/wiki/images/7/7f/T--Calgary--SampleImage.png">
+      </div>
+      <div class="col-lg-7 info">
+        <h3>
+          CRISPR
+        </h3>
+        <h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos magnam commodi id? Aut omnis officiis, aspernatur
+          velit eaque labore rem accusamus repellendus porro aperiam, asperiores quidem beatae. Voluptatibus, aspernatur!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio, cupiditate aut consectetur labore fugit
+          fuga vero quas pariatur sit et? Repellat voluptatibus, molestias soluta architecto dolorem doloremque quaerat modi.
+        </p>
+        <button type="button" class="btn btn-outline-dark">Read more</button>
       </div>
     </div>
-
-    <div class='container section'>
-      <div class='row'>
-        <div class='col-md-12 backL'>
-          <h5 class='centeredTitle'>
-            Enjoy Your Day </h5>
-          <h2 class='centeredTitle'>
-            Tonight is Taken Care of </h2>
-        </div>
+    <div class="row">
+      <div class="col-lg-7 info">
+        <h3>
+          UCOE
+        </h3>
+        <h5>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dignissimos magnam commodi id? Aut omnis officiis, aspernatur
+          velit eaque labore rem accusamus repellendus porro aperiam, asperiores quidem beatae. Voluptatibus, aspernatur!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio, cupiditate aut consectetur labore fugit
+          fuga vero quas pariatur sit et? Repellat voluptatibus, molestias soluta architecto dolorem doloremque quaerat modi.
+        </p>
+        <button type="button" class="btn btn-outline-dark">Read more</button>
+      </div>
+      <div class="col-lg-5 info">
+        <img style="transform: scaleX(-1); width: 100%" src="http://2018.igem.org/wiki/images/7/7f/T--Calgary--SampleImage.png">
       </div>
     </div>
-
-    <div class='container section'>
-      <div class='row'>
-        <div class='col-md-6'>
-
-        </div>
-        <div class='col-md-6'>
-          <h2 class='leftTitle'>
-            AI-Powered Discovery Platform
-          </h2>
-          <h5 class='leftTitle'>
-            The future of medicine will rely on artificial intelligence, because biology is too complex for humans to understand
-          </h5>
-          <p>
-            Our AI platform rapidly directs us to the best drug candidates. It knows cell biology, right down to the level of DNA, RNA
-            and the molecular machinery of the cell. Everyone at Deep Genomics uses the platform to do their work, and everyone
-            participates in improving the platform. That includes our geneticists, biologists, chemists, toxicologists and
-            drug developers. Now, we’re creating new oligonucleotide therapies, designed up front to be effective and safe.
-          </p>
-          <button class="button1">Learn More</button>
-        </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-4 info">
+        <h3>
+          CRISPR
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nihil recusandae ea suscipit blanditiis! Ut adipisci rem,
+          quisquam sed fugit libero voluptatum! Ratione vitae ipsum magnam nobis molestias, omnis hic.
+        </p>
+      </div>
+      <div class="col-lg-4 info">
+        <h3>
+          UCOE
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nihil recusandae ea suscipit blanditiis! Ut adipisci rem,
+          quisquam sed fugit libero voluptatum! Ratione vitae ipsum magnam nobis molestias, omnis hic.
+        </p>
+      </div>
+      <div class="col-lg-4 info">
+        <h3>
+          Software/Modelling
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nihil recusandae ea suscipit blanditiis! Ut adipisci rem,
+          quisquam sed fugit libero voluptatum! Ratione vitae ipsum magnam nobis molestias, omnis hic.
+        </p>
       </div>
     </div>
-
-    <div class='container section'>
-      <div class='row'>
-        <div class='col-md-6'>
-          <h2 class='leftTitle'>
-            Project Saturn
-          </h2>
-          <h5 class='leftTitle'>
-            Smart drug design is about predicting outcomes up front. That's what our AI platform does best, and Saturn is the proof </h5>
-          <p>
-            In Project Saturn, we're using our platform to evaluate over 69 billion molecules against 1 million targets, in silico, to
-            generate a library of 1000 compounds that are experimentally verified to manipulate cell biology as intended.
-            Think of it as a toolkit for controlling cell biology along crucial pathways, rapidly unlocking therapies with
-            greater potential.
-          </p>
-          <button class="button1">Learn More</button>
-        </div>
-        <div class='col-md-6'>
-        </div>
-      </div>
-    </div>
-
-    <div class='container-fluid'>
-      <div class='row'>
-        <div class='col-md-4 backP'>
-          <h4 class='centeredTitle fluidText'>FOR ONE</h4>
-          <p class='centeredTitle fluidText'>
-            [I] whip up the meals for dinner and bring leftovers to work…. Whether it’s by myself or with friends, I always make cooking
-            Plated a fun experience with some music and maybe a little wine. … Love the saving money factor as well!
-          </p>
-        </div>
-        <div class='col-md-4 backP'>
-          <h4 class='centeredTitle'>FOR TWO</h4>
-          <p class='centeredTitle'>
-            I cook for my wife and myself…. Usually we spread three Plated meals for two across the week. … I love the things I have
-            learned from new techniques … It has made me a better and exciting cook!
-          </p>
-        </div>
-        <div class='col-md-4 backP'>
-          <h4 class='centeredTitle fluidText'>
-            FOR MANY
-          </h4>
-          <p class='centeredTitle fluidText'>
-            Working parents, busy kids. Plated takes 2 important steps out of my busy evening schedule: shopping and deciding what to
-            cook. Before: boring, repetitive. Now: Exciting, tasty, . . . and beyond most restaurant experiences.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class='container section'>
-      <div class='row'>
-        <div class='col-md-8'>
-
-        </div>
-        <div class='col-md-4'>
-          <h2 class='leftTitle'>
-            Join Us
-          </h2>
-          <p>
-            We are looking for individuals who are inspired to join us in building a new kind of world-class genetic medicine company.
-          </p>
-          <button class="button1">Learn More</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="row">
-        <div class="col-1 social-media">
-          <a href="#">
-            <i class="fab fa-facebook-f social-media-icon"></i>
-          </a>
-          <br>
-          <a href="#">
-            <i class="fab fa-instagram social-media-icon"></i>
-          </a>
-          <br>
-          <a href="#">
-            <i class="fab fa-twitter social-media-icon"></i>
-          </a>
-          <br>
-          <a href="#">
-            <i class="far fa-envelope social-media-icon"></i>
-          </a>
-        </div>
-        <div class="col-11">
-
-        </div>
-      </div>
-
-    </div>
+  </div>
+  <!-- Social Media -->
+  <div class="bottom-left">
+    <ul id="social-media-icons">
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook-f social-media-icon" aria-hidden="true"></i>
+        </a>
+      </li>
+      <br>
+      <li>
+        <a href="#">
+          <i class="fab fa-instagram social-media-icon" aria-hidden="true"></i>
+        </a>
+      </li>
+      <br>
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter social-media-icon" aria-hidden="true"></i>
+        </a>
+      </li>
+      <br>
+      <li>
+        <a href="#">
+          <i class="far fa-envelope social-media-icon" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
   </div>
 </body>
 
