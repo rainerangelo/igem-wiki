@@ -157,7 +157,7 @@ h5 {
     background-color: #eeedf0;
 }
 
-#team-photo {
+.team-photo {
     width: 70%;
     position: static;
     margin: 0 auto;
@@ -169,18 +169,25 @@ h5 {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 992px) {
+#fullpage-small {
+    display: none;
+    margin-bottom: 210px;
+    margin-top: 210px;
+    padding: 0;
+}
+
+@media only screen and (min-width: 1121px) {
     .photos-div {
         bottom: 10%;
         height: 65%;
         position: absolute;
-        right: 10%;
-        width: 75%;
+        right: 5%;
+        width: 85%;
         padding: 100px;
         background-color: none;
     }
     
-    #team-photo {
+    .team-photo {
         width: 70%;
         position: absolute;
         margin: auto;
@@ -191,17 +198,37 @@ h5 {
     }
     
     .individual-photo {
-        width: 100%;
+        width: 85%;
         display: block;
         margin: 0 auto;
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1120px) {
     .backbox {
         display: none;
     }
-    #team-title {
+    
+    .team-photo {
+        width: 70%;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .individual-photo {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #fullpage {
         display: none;
+    }
+
+    #fullpage-small {
+        display: block;
     }
 }
